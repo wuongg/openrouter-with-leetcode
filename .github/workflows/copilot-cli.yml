@@ -32,4 +32,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
-          gh issue create --title "Daily Summary for $(date +'%Y-%m-%d')" --body-file summary.md --label "daily-summary" "copilot-cli"
+          gh issue create \
+            --title "Daily Summary for $(date +'%Y-%m-%d')" \
+            --body-file summary.md \
+            --label "daily-summary" \
+            --label "copilot-cli"
