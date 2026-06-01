@@ -6,6 +6,7 @@
 [![Problems Solved](https://img.shields.io/badge/dynamic/json?label=Solved&query=length&url=https://raw.githubusercontent.com/Stewie-pixel/claude-with-leetcode/main/.problemSiteData.json&color=brightgreen&logo=leetcode)](https://github.com/Stewie-pixel/claude-with-leetcode)
 ![C%2B%2B](https://img.shields.io/badge/C%2B%2B-00599c?logo=cplusplus&logoColor=ffffff)
 ![Python](https://img.shields.io/badge/Python-3776ab?logo=python&logoColor=ffffff)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=ffffff)
 
 A little assistant from Claude to help you learn daily LeetCode problems organised by DSA topic and difficulty.
 
@@ -78,14 +79,14 @@ e.g. 0001-two-sum.cpp
 
 ### Arrays & Hashing
 
-<sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Python</sub>
----- | ---- | ---- | ----
-<sub>[0001 - Two Sum](https://leetcode.com/problems/two-sum)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F1-two-sum%2FREADME.md)</div></sub> | <sub><div align='center'>[✔️](python%2F1-two-sum%2FREADME.md)</div></sub>
+<sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Python</sub> | <sub>Rust</sub>
+---- | ---- | ---- | ---- | ----
+<sub>[0001 - Two Sum](https://leetcode.com/problems/two-sum)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F1-two-sum%2FREADME.md)</div></sub> | <sub><div align='center'>[✔️](python%2F1-two-sum%2FREADME.md)</div></sub> | <sub><div align='center'>[✔️](rust%2F1-two-sum%2FREADME.md)</div></sub>
 
 ### Array
 
-<sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Python</sub>
----- | ---- | ---- | ----
-<sub>[0724 - Find Pivot Index](https://leetcode.com/problems/find-pivot-index)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F724-find-pivot-index%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Python</sub> | <sub>Rust</sub>
+---- | ---- | ---- | ---- | ----
+<sub>[0724 - Find Pivot Index](https://leetcode.com/problems/find-pivot-index)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F724-find-pivot-index%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
 
