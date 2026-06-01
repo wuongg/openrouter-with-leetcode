@@ -5,5 +5,12 @@
     "difficulty": "Easy",
     "link": "two-sum",
     "code": "0001"
+  },
+  {
+    "problem": "Find Pivot Index",
+    "pattern": "Array",
+    "difficulty": "Easy",
+    "link": "find-pivot-index",
+    "code": "0724"
   }
 ]
