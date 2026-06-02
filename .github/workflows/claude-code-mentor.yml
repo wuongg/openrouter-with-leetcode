@@ -67,5 +67,5 @@ jobs:
                   git config --global user.email "${{ secrets.BOT_EMAIL }}"
                   git config --global user.name "${{ secrets.BOT_USERNAME }}"
                   git add .
-                  git commit -m "docs: Automated Mentor Analysis for new solution"
+                  git commit -m "docs: claude mentor analysis for new solution [skip ci]"
                   git push || git pull --rebase && git push
