@@ -23,6 +23,14 @@
     "cpp": true
   },
   {
+    "problem": "Shortest Palindrome",
+    "pattern": "String",
+    "difficulty": "Hard",
+    "link": "shortest-palindrome",
+    "code": "0214",
+    "cpp": true
+  },
+  {
     "problem": "Contains Duplicate II",
     "pattern": "Array",
     "difficulty": "Easy",
