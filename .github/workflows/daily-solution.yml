@@ -1,9 +1,6 @@
 name: Daily LeetCode Solution
 on:
     workflow_dispatch:
-    push:
-        branches: ['feat/45-refine-github-actions-workflow']
-
     schedule:
         - cron: '30 17 * * *'
 permissions:
@@ -15,6 +12,8 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
 
             - name: Create issues for new solutions
               env:

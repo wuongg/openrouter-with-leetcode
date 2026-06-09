@@ -54,14 +54,5 @@ mkdir -p .github/badges
 echo "$ENTRIES" | jq '.' > .github/badges/solutions.json
 echo "Written: .github/badges/solutions.json ($COUNT entries)"
 
-cat > .github/badges/badge.json <<EOF
-{
-  "schemaVersion": 1,
-  "label": "LeetCode solutions",
-  "message": "$COUNT solved"
-}
-EOF
-echo "Written: .github/badges/badge.json"
-
 echo ""
 echo "Total unique problems: $COUNT"
