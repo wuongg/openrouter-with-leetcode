@@ -1,7 +1,5 @@
 name: 'Feature Request'
 description: 'Suggest an idea or solution to a new Leetcode problem'
-labels:
-    - 'status/need-triage'
 body:
     - type: 'markdown'
       attributes:
