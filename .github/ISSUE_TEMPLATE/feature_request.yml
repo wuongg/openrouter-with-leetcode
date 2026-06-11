@@ -2,7 +2,6 @@ name: 'Feature Request'
 description: 'Suggest an idea or solution to a new Leetcode problem'
 labels:
     - 'status/need-triage'
-type: 'Feature'
 body:
     - type: 'markdown'
       attributes:
@@ -11,7 +10,6 @@ body:
               > Thanks for taking the time to suggest an enhancement!
               >
               > Please search **[existing issues](https://github.com/Stewie-pixel/claude-with-leetcode/issues)** to see if a similar feature/solution has already been requested.
-
     - type: 'textarea'
       id: 'feature'
       attributes:
@@ -19,7 +17,6 @@ body:
           description: 'A clear and concise description of the enhancement.'
       validations:
           required: true
-
     - type: 'textarea'
       id: 'rationale'
       attributes:
@@ -27,15 +24,13 @@ body:
           description: 'A clear and concise description of why this enhancement is needed.'
       validations:
           required: true
-
-    - type: 'markdown'
+    - type: 'textarea'
       id: 'proof-validation'
       attributes:
           label: 'Evidence of accepted solution on Leetcode'
           description: 'Please provide a link/image to the accepted solution on Leetcode that demonstrates the validated solution.'
       validations:
           required: true
-
     - type: 'textarea'
       id: 'additional-context'
       attributes:
