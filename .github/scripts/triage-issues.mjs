@@ -1,6 +1,3 @@
-import { writeFileSync } from 'node:fs';
-import { join } from 'node:path';
-
 const AREA_LABELS = [
     'area/arrays',
     'area/strings',
@@ -66,8 +63,7 @@ export default async function triage({ github, context, core }) {
         typeof l === 'string' ? l : l.name,
     );
 
-    const alreadyTriaged = existingLabels.includes('status/bot-triaged');
-    if (alreadyTriaged) {
+    if (existingLabels.includes('status/bot-triaged')) {
         core.info(`Issue #${issueNumber} is already bot-triaged — skipping.`);
         return;
     }
@@ -149,13 +145,4 @@ Do not include any explanation or markdown.`;
         });
         core.info(`Applied labels to #${issueNumber}: ${newLabels.join(', ')}`);
     }
-
-    const workspacePath = process.env.GITHUB_WORKSPACE ?? '.';
-    const cleanupPath = join(workspacePath, 'issues_to_cleanup.json');
-    writeFileSync(
-        cleanupPath,
-        JSON.stringify([{ number: issueNumber }]),
-        'utf8',
-    );
-    core.info(`Wrote ${cleanupPath} for cleanup step.`);
 }

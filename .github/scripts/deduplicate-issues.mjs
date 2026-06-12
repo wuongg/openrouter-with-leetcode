@@ -1,4 +1,10 @@
 export default async function deduplicate({ github, context }) {
+    const isIssueEvent = context.eventName === 'issues';
+
+    if (isIssueEvent) {
+        await new Promise((r) => setTimeout(r, 5000));
+    }
+
     const newIssue = context.payload.issue;
     const owner = context.repo.owner;
     const repo = context.repo.repo;
@@ -64,6 +70,24 @@ Do not include any explanation.`;
         .filter((i) => duplicateNumbers.includes(i.number))
         .map((i) => `- #${i.number} — **${i.title}**`)
         .join('\n');
+
+    const comments = await github.paginate(github.rest.issues.listComments, {
+        owner,
+        repo,
+        issue_number: newIssue.number,
+        per_page: 100,
+    });
+
+    const alreadyCommented = comments.some(
+        (c) =>
+            c.user.login === 'mirabile-cli[bot]' &&
+            c.body.includes('Possible Duplicate Detected'),
+    );
+
+    if (alreadyCommented) {
+        console.log('Duplicate comment already posted, skipping.');
+        return;
+    }
 
     const comment = `## Possible Duplicate Detected
 
