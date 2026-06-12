@@ -9,11 +9,11 @@ on:
 jobs:
     review:
         if: >-
-            github.actor != 'mirabile[bot]' &&
+            github.actor != 'mirabile-cli[bot]' &&
             (
               (github.event_name == 'issue_comment' &&
                contains(github.event.comment.body, '@mirabile') &&
-               github.event.comment.user.login != 'mirabile[bot]') ||
+               github.event.comment.user.login != 'mirabile-cli[bot]') ||
               (github.event_name == 'issues' &&
                (contains(github.event.issue.body, '@mirabile') ||
                 contains(github.event.issue.title, '@mirabile')))
