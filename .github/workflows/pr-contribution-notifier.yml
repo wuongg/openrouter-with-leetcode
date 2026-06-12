@@ -1,7 +1,7 @@
 name: PR Contribution Notifier
 
 on:
-    pull_request_target:
+    pull_request:
         types: [opened]
 
 jobs:
@@ -12,6 +12,7 @@ jobs:
             github.actor != 'mirabile-cli[bot]'
 
         permissions:
+            contents: read
             pull-requests: write
             issues: write
 
