@@ -3,6 +3,8 @@ name: PR Code Review
 on:
     pull_request:
         types: [opened, synchronize]
+    pull_request_target:
+        types: [opened, synchronize]
 
 jobs:
     code-review:
