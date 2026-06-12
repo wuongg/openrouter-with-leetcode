@@ -73,10 +73,7 @@ ${dupList}
 
 Please review the issues above before proceeding. If this is a duplicate, consider closing this issue and continuing the discussion there.
 
-If you believe this is **not** a duplicate, no action is needed — a maintainer will review shortly.
-
----
-*Duplicate check by [@mirabile](https://github.com/apps/mirabile)*`;
+If you believe this is **not** a duplicate, no action is needed — a maintainer will review shortly.`;
 
     await github.rest.issues.createComment({
         owner,
