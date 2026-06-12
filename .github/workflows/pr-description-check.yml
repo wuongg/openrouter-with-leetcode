@@ -47,7 +47,11 @@ jobs:
                       }
 
                       // Check 2 — Related Issues must reference an issue
-                      const hasIssueRef = /\b(closes|fixes|resolves|related to)\s+#\d+/i.test(body);
+                      const hasIssueRefInBody = /\b(closes|fixes|resolves|related to)\s+#\d+/i.test(body);
+                      const branchName = context.payload.pull_request.head.ref;
+                      const hasIssueRefInBranch = /(?:^|[\/\-_])(\d+)(?:[\/\-_]|$)/.test(branchName);
+                      const hasIssueRef = hasIssueRefInBody || hasIssueRefInBranch;
+
                       if (!hasIssueRef) {
                           failures.push('**Related Issues** section must reference an issue using `Closes #`, `Fixes #`, `Resolves #`, or `Related to #`.');
                       }
