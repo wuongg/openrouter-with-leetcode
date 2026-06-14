@@ -65,6 +65,11 @@
     "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/21-merge-two-sorted-lists/ANALYSIS.md"
   },
   {
+    "slug": "2130-maximum-twin-sum-of-a-linked-list",
+    "title": "Fast & Slow Pointers",
+    "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/2130-maximum-twin-sum-of-a-linked-list/ANALYSIS.md"
+  },
+  {
     "slug": "214-shortest-palindrome",
     "title": "Shortest Palindrome (KMP / Prefix Function)",
     "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/214-shortest-palindrome/ANALYSIS.md"
@@ -175,6 +180,21 @@
     "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/3957-maximum-sum-of-m-non-overlapping-subarrays-ii/ANALYSIS.md"
   },
   {
+    "slug": "3959-check-good-integer",
+    "title": "Math & Geometry",
+    "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/3959-check-good-integer/ANALYSIS.md"
+  },
+  {
+    "slug": "3960-frequency-balance-subarray",
+    "title": "Arrays & Hashing",
+    "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/3960-frequency-balance-subarray/ANALYSIS.md"
+  },
+  {
+    "slug": "3961-maximize-sum-of-device-ratings",
+    "title": "Greedy",
+    "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/3961-maximize-sum-of-device-ratings/ANALYSIS.md"
+  },
+  {
     "slug": "47-permutations-ii",
     "title": "Backtracking",
     "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/cpp/47-permutations-ii/ANALYSIS.md"
@@ -218,6 +238,11 @@
     "slug": "206-reverse-linked-list",
     "title": "Reverse Linked List",
     "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/java/206-reverse-linked-list/ANALYSIS.md"
+  },
+  {
+    "slug": "287-find-the-duplicate-number",
+    "title": "Fast & Slow Pointers",
+    "url": "https://github.com/Stewie-pixel/claude-with-leetcode/blob/main/java/287-find-the-duplicate-number/ANALYSIS.md"
   },
   {
     "slug": "658-find-k-closest-elements",
