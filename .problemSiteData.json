@@ -340,6 +340,14 @@
     "cpp": true
   },
   {
+    "problem": "Process String with Special Operations II",
+    "pattern": "String, Simulation",
+    "difficulty": "Hard",
+    "link": "process-string-with-special-operations-ii",
+    "code": "3614",
+    "cpp": true
+  },
+  {
     "problem": "Earliest Finish Time for Land and Water Rides I",
     "pattern": "Array",
     "difficulty": "Easy",
