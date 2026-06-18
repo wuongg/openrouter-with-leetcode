@@ -144,7 +144,20 @@ function* walkSync(dir) {
 
 function nestedFiles(dir) {
     const files = [];
-    for (const filePath of walkSync(dir)) files.push(filePath);
+    const searchPaths = [
+        dir,
+        `dcc/${dir}`,
+        `study_plan/leetcode75/${dir}`,
+        `contest/weekly/${dir}`,
+        `contest/biweekly/${dir}`
+    ];
+    for (const sPath of searchPaths) {
+        if (fs.existsSync(sPath)) {
+            for (const filePath of walkSync(sPath)) {
+                files.push(filePath);
+            }
+        }
+    }
     return files;
 }
 
