@@ -4,7 +4,10 @@
     "pattern": "Array, Hash Table",
     "difficulty": "Easy",
     "link": "two-sum",
-    "code": "0001"
+    "code": "0001",
+    "cpp": true,
+    "python": true,
+    "rust": true
   },
   {
     "problem": "Add Two Numbers",
@@ -12,7 +15,24 @@
     "difficulty": "Medium",
     "link": "add-two-numbers",
     "code": "0002",
+    "c": true,
     "java": true
+  },
+  {
+    "problem": "Longest Substring Without Repeating Characters",
+    "pattern": "Hash Table, String, Sliding Window",
+    "difficulty": "Medium",
+    "link": "longest-substring-without-repeating-characters",
+    "code": "0003",
+    "c": true
+  },
+  {
+    "problem": "Median of Two Sorted Arrays",
+    "pattern": "Array, Binary Search, Divide and Conquer",
+    "difficulty": "Hard",
+    "link": "median-of-two-sorted-arrays",
+    "code": "0004",
+    "c": true
   },
   {
     "problem": "Zigzag Conversion",
@@ -21,6 +41,38 @@
     "link": "zigzag-conversion",
     "code": "0006",
     "cpp": true
+  },
+  {
+    "problem": "Reverse Integer",
+    "pattern": "Math",
+    "difficulty": "Medium",
+    "link": "reverse-integer",
+    "code": "0007",
+    "c": true
+  },
+  {
+    "problem": "Container With Most Water",
+    "pattern": "Array, Two Pointers, Greedy",
+    "difficulty": "Medium",
+    "link": "container-with-most-water",
+    "code": "0011",
+    "c": true
+  },
+  {
+    "problem": "3Sum",
+    "pattern": "Array, Two Pointers, Sorting",
+    "difficulty": "Medium",
+    "link": "3sum",
+    "code": "0015",
+    "c": true
+  },
+  {
+    "problem": "Remove Nth Node From End of List",
+    "pattern": "Linked List, Two Pointers",
+    "difficulty": "Medium",
+    "link": "remove-nth-node-from-end-of-list",
+    "code": "0019",
+    "java": true
   },
   {
     "problem": "Merge Two Sorted Lists",
@@ -55,6 +107,54 @@
     "cpp": true
   },
   {
+    "problem": "Binary Tree Inorder Traversal",
+    "pattern": "Stack, Tree, Depth-First Search, Binary Tree",
+    "difficulty": "Easy",
+    "link": "binary-tree-inorder-traversal",
+    "code": "0094",
+    "rust": true
+  },
+  {
+    "problem": "Longest Consecutive Sequence",
+    "pattern": "Array, Hash Table, Union-Find",
+    "difficulty": "Medium",
+    "link": "longest-consecutive-sequence",
+    "code": "0128",
+    "cpp": true
+  },
+  {
+    "problem": "Copy List with Random Pointer",
+    "pattern": "Hash Table, Linked List",
+    "difficulty": "Medium",
+    "link": "copy-list-with-random-pointer",
+    "code": "0138",
+    "java": true
+  },
+  {
+    "problem": "Linked List Cycle",
+    "pattern": "Hash Table, Linked List, Two Pointers",
+    "difficulty": "Easy",
+    "link": "linked-list-cycle",
+    "code": "0141",
+    "java": true
+  },
+  {
+    "problem": "Reorder List",
+    "pattern": "Linked List, Two Pointers, Stack, Recursion",
+    "difficulty": "Medium",
+    "link": "reorder-list",
+    "code": "0143",
+    "java": true
+  },
+  {
+    "problem": "Reverse Linked List",
+    "pattern": "Linked List, Recursion",
+    "difficulty": "Easy",
+    "link": "reverse-linked-list",
+    "code": "0206",
+    "java": true
+  },
+  {
     "problem": "Shortest Palindrome",
     "pattern": "String",
     "difficulty": "Hard",
@@ -69,6 +169,14 @@
     "link": "contains-duplicate-ii",
     "code": "0219",
     "cpp": true
+  },
+  {
+    "problem": "Find the Duplicate Number",
+    "pattern": "Array, Two Pointers, Binary Search, Bit Manipulation",
+    "difficulty": "Medium",
+    "link": "find-the-duplicate-number",
+    "code": "0287",
+    "java": true
   },
   {
     "problem": "Reconstruct Itinerary",
@@ -95,11 +203,20 @@
     "cpp": true
   },
   {
+    "problem": "Find K Closest Elements",
+    "pattern": "Array, Two Pointers, Binary Search, Sliding Window, Sorting, Heap (Priority Queue)",
+    "difficulty": "Medium",
+    "link": "find-k-closest-elements",
+    "code": "0658",
+    "java": true
+  },
+  {
     "problem": "Find Pivot Index",
     "pattern": "Array",
     "difficulty": "Easy",
     "link": "find-pivot-index",
-    "code": "0724"
+    "code": "0724",
+    "cpp": true
   },
   {
     "problem": "All Paths From Source to Target",
@@ -115,11 +232,11 @@
     "difficulty": "Hard",
     "link": "guess-the-word",
     "code": "0843",
-    "ruby": true,
-    "kotlin": true,
-    "go": true,
+    "cpp": true,
     "csharp": true,
-    "cpp": true
+    "go": true,
+    "ruby": true,
+    "kotlin": true
   },
   {
     "problem": "Largest Component Size by Common Factor",
@@ -207,9 +324,9 @@
     "difficulty": "Medium",
     "link": "determine-if-two-strings-are-close",
     "code": "1657",
-    "rust": true,
+    "cpp": true,
     "python": true,
-    "cpp": true
+    "rust": true
   },
   {
     "problem": "Find if Path Exists in Graph",
@@ -252,12 +369,22 @@
     "cpp": true
   },
   {
+    "problem": "Minimum Cost of Buying Candies With Discount",
+    "pattern": "Array, Greedy, Sorting",
+    "difficulty": "Easy",
+    "link": "minimum-cost-of-buying-candies-with-discount",
+    "code": "2144",
+    "cpp": true,
+    "python": true
+  },
+  {
     "problem": "Partition Array According to Given Pivot",
     "pattern": "Array",
     "difficulty": "Medium",
     "link": "partition-array-according-to-given-pivot",
     "code": "2161",
-    "cpp": true
+    "cpp": true,
+    "java": true
   },
   {
     "problem": "Create Binary Tree From Descriptions",
@@ -448,7 +575,8 @@
     "pattern": "Contest",
     "difficulty": "Easy",
     "link": "limit-occurrences-in-sorted-array",
-    "code": "3940"
+    "code": "3940",
+    "cpp": true
   },
   {
     "problem": "Exactly One Consecutive Set Bits Pair",
