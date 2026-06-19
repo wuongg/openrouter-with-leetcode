@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/cover.gif" height="300" width="100%" alt="DSA Mentor Banner" />
+<img src="./assets/cover.gif" height="350" width="100%" alt="DSA Mentor Banner" />
 
 # Claude with LeetCode
 
