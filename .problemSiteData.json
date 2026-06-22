@@ -255,6 +255,14 @@
     "cpp": true
   },
   {
+    "problem": "Maximum Number of Balloons",
+    "pattern": "Hash Table, String, Counting",
+    "difficulty": "Easy",
+    "link": "maximum-number-of-balloons",
+    "code": "1189",
+    "cpp": true
+  },
+  {
     "problem": "Angle Between Hands of a Clock",
     "pattern": "Math",
     "difficulty": "Medium",
@@ -342,6 +350,14 @@
     "difficulty": "Easy",
     "link": "find-the-highest-altitude",
     "code": "1732",
+    "cpp": true
+  },
+  {
+    "problem": "Map of Highest Peak",
+    "pattern": "Array, Breadth-First Search, Matrix",
+    "difficulty": "Medium",
+    "link": "map-of-highest-peak",
+    "code": "1765",
     "cpp": true
   },
   {
