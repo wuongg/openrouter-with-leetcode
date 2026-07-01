@@ -617,7 +617,8 @@ Return ONLY a raw JSON object with no markdown fences, matching this schema:
   "comments": [
     {
       "path": "path/to/file.ext",
-      "line": 123,
+      "start_line": 8
+      "line": 15,
       "severity": "CRITICAL|HIGH|MEDIUM",
       "body": "[CRITICAL|HIGH|MEDIUM] explanation\n\n\`\`\`suggestion\n// code\n\`\`\`"
     }
@@ -626,6 +627,7 @@ Return ONLY a raw JSON object with no markdown fences, matching this schema:
 
 IMPORTANT:
 - If you detect a logical error, you MUST provide at least one inline comment with a \`\`\`suggestion block fixing it.
+- suggestion blocks MUST cover the entire replaced code block — if the fix spans multiple lines, anchor the comment to the FIRST line of the block and include ALL original lines in the suggestion (both the removed and replacement lines), so GitHub replaces the full range cleanly without overlap.
 - line values MUST be from the Valid Diff Lines list — no other lines will be accepted
 - Prefer lines from the added (prefer these) list; only use context (allowed) if no added line is appropriate
 - suggestion blocks MUST match the exact indentation of the surrounding code at the target line — use the numbered source to determine the correct whitespace prefix
@@ -672,6 +674,7 @@ IMPORTANT:
                         );
                         continue;
                     }
+
                     const lineNum = Number(c.line);
                     if (!diffEntry.valid.has(lineNum)) {
                         core.warning(
@@ -679,6 +682,17 @@ IMPORTANT:
                         );
                         continue;
                     }
+
+                    if (
+                        c.start_line &&
+                        !diffEntry.valid.has(Number(c.start_line))
+                    ) {
+                        core.warning(
+                            `start_line ${c.start_line} not in diff for ${c.path}, dropping to single-line`,
+                        );
+                        c.start_line = undefined;
+                    }
+
                     if (!diffEntry.added.has(lineNum)) {
                         core.info(
                             `Inline comment on ${c.path}:${c.line} anchored to context line (not a pure addition).`,
@@ -716,6 +730,10 @@ IMPORTANT:
                     filtered.push({
                         path: c.path,
                         line: Number(c.line),
+                        start_line: c.start_line
+                            ? Number(c.start_line)
+                            : undefined,
+                        start_side: c.start_line ? 'RIGHT' : undefined,
                         side: 'RIGHT',
                         body: bodyStr,
                     });
