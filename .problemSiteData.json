@@ -641,6 +641,14 @@
     "typescript": true
   },
   {
+    "problem": "Find the Safest Path in a Grid",
+    "pattern": "Array, Binary Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix",
+    "difficulty": "Medium",
+    "link": "find-the-safest-path-in-a-grid",
+    "code": "2812",
+    "cpp": true
+  },
+  {
     "problem": "Find the Maximum Number of Elements in Subset",
     "pattern": "Array, Hash Table, Enumeration",
     "difficulty": "Medium",
