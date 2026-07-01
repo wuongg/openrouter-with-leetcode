@@ -131,7 +131,9 @@ function fixSuggestionIndent(body, path, line, numberedSourceMap) {
             return baseIndent + stripped;
         });
 
-        return '```suggestion\n' + normalized.join('\n') + '```';
+        let joined = normalized.join('\n');
+        joined = joined.replace(/\n*$/, '') + '\n';
+        return '```suggestion\n' + joined + '```';
     });
 }
 
@@ -684,16 +686,15 @@ IMPORTANT:
                     }
 
                     let bodyStr = (c.body ?? '').trim();
+                    bodyStr = bodyStr.replace(/\\n/g, '\n');
+
                     let sev = c.severity ? c.severity.toUpperCase() : 'HIGH';
 
-                    const tagMatch = /^\[(CRITICAL|HIGH|MEDIUM|LOW)\]/i.test(
-                        bodyStr,
+                    const tagMatch = bodyStr.match(
+                        /^\[(CRITICAL|HIGH|MEDIUM|LOW)\]/i,
                     );
                     if (tagMatch) {
-                        const match = bodyStr.match(
-                            /^\[(CRITICAL|HIGH|MEDIUM|LOW)\]/i,
-                        );
-                        sev = match[1].toUpperCase();
+                        sev = tagMatch[1].toUpperCase();
                         bodyStr = bodyStr.replace(/^\[.*?\]\s*/, '');
                     }
 
@@ -703,8 +704,8 @@ IMPORTANT:
                     else if (sev === 'MEDIUM') color = 'yellow';
 
                     const badge = `<div align="left"><img src="https://img.shields.io/badge/${sev}-${color}" alt="${sev}" /></div>\n\n`;
-
                     bodyStr = badge + bodyStr;
+
                     bodyStr = fixSuggestionIndent(
                         bodyStr,
                         c.path,
