@@ -705,6 +705,14 @@
     "cpp": true
   },
   {
+    "problem": "Network Recovery Pathways",
+    "pattern": "Array, Binary Search, Dynamic Programming, Graph Theory, Topological Sort, Heap (Priority Queue), Shortest Path",
+    "difficulty": "Hard",
+    "link": "network-recovery-pathways",
+    "code": "3620",
+    "cpp": true
+  },
+  {
     "problem": "Earliest Finish Time for Land and Water Rides I",
     "pattern": "Array",
     "difficulty": "Easy",
