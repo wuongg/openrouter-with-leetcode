@@ -1,4 +1,4 @@
-# Contributing to Claude with LeetCode
+# Contributing to OpenRouter with LeetCode
 
 First and foremost, thanks a lot for being part of the community! Every problem you contribute makes this project more valuable for every developer who is learning DSA. Whether you're submitting your first solution or your hundredth, your effort is genuinely appreciated and does not go unnoticed. This is a community built one problem at a time, and you're a part of that. 🙏
 

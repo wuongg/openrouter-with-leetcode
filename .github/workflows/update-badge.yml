@@ -32,5 +32,5 @@ jobs:
                   git add .github/badges/solutions.json
                   git diff --cached --quiet && echo "No changes to commit" && exit 0
                   COUNT=$(jq '. | length' .github/badges/solutions.json)
-                  git commit -m "chore: update claude solution count to $COUNT"
+                  git commit -m "chore: update openrouter solution count to $COUNT"
                   git push

@@ -40,7 +40,7 @@ permissions:
 
 jobs:
     explain:
-        if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'claude mentor analysis')
+        if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'openrouter mentor analysis')
         runs-on: ubuntu-latest
 
         steps:
@@ -55,7 +55,7 @@ jobs:
               with:
                   node-version: 20.x
 
-            - name: Run Claude DSA Mentor Analysis
+            - name: Run OpenRouter DSA Mentor Analysis
               env:
                   OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
                   SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
@@ -66,14 +66,14 @@ jobs:
               run: |
                   echo modified=$(if [ -z "$(git status --porcelain)" ]; then echo "false"; else echo "true"; fi) >> $GITHUB_OUTPUT
 
-            - name: Create Claude Analysis PR
+            - name: Create OpenRouter Analysis PR
               if: steps.git-check.outputs.modified == 'true'
               env:
                   GH_TOKEN: ${{ secrets.BOT_TOKEN }}
                   PR_BODY: |
                       ## Summary
 
-                      Automated Claude DSA mentor analysis generated for a new LeetCode solution.
+                      Automated OpenRouter DSA mentor analysis generated for a new LeetCode solution.
 
                       This PR adds the generated explanation, complexity analysis, and learning notes
                       without modifying the original solution implementation.
@@ -84,7 +84,7 @@ jobs:
 
                       Changes include:
 
-                      - Generated ANALYSIS.md from Claude mentor pipeline
+                      - Generated ANALYSIS.md from OpenRouter mentor pipeline
                       - Added algorithm explanation
                       - Added complexity analysis
                       - Added implementation insights
@@ -130,15 +130,15 @@ jobs:
                   git config --global user.email "${{ secrets.BOT_EMAIL }}"
                   git config --global user.name "${{ secrets.BOT_USERNAME }}"
 
-                  BRANCH="claude/add-solution-analysis-${{ github.run_id }}"
+                  BRANCH="openrouter/add-solution-analysis-${{ github.run_id }}"
                   git checkout -b $BRANCH
 
                   git add .
-                  git commit -m "docs: add claude mentor analysis for new solution" || exit 0
+                  git commit -m "docs: add openrouter mentor analysis for new solution" || exit 0
                   git push origin $BRANCH
 
                   gh pr create \
                     --base main \
                     --head $BRANCH \
-                    --title "docs: add claude mentor analysis for new solution" \
+                    --title "docs: add openrouter mentor analysis for new solution" \
                     --body "$PR_BODY"

@@ -54,7 +54,7 @@ jobs:
                       const labels = issue.labels.map(l => l.name).join(', ');
                       const url = `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${number}`;
 
-                      const prompt = `You are Mirabile, an AI assistant integrated into the claude-with-leetcode GitHub repository — an open-source project that uses Claude AI to automatically generate daily DSA (Data Structures & Algorithms) lectures from LeetCode solutions committed by developers.
+                      const prompt = `You are Mirabile, an AI assistant integrated into the claude-with-leetcode GitHub repository — an open-source project that uses OpenRouter to automatically generate daily DSA (Data Structures & Algorithms) lectures from LeetCode solutions committed by developers.
 
                       Your job is to review the following GitHub issue and provide a structured, insightful analysis that helps the maintainer understand the issue quickly and act on it effectively.
 
@@ -74,7 +74,7 @@ jobs:
                       Analyze the issue below and respond with only this section:
 
                       ## Effort Analysis
-                      One short and clear paragraph. Identify which parts of the codebase are affected (e.g. solution ingestion, Claude prompt templates, lecture generation pipeline, output formatting, GitHub Actions workflow).
+                      One short and clear paragraph. Identify which parts of the codebase are affected (e.g. solution ingestion, OpenRouter prompt templates, lecture generation pipeline, output formatting, GitHub Actions workflow).
                       Note whether existing patterns or utilities can be reused, whether the change is additive or modifies core logic,
                       and close with an effort label: \`effort/small\` (1 day or less), \`effort/medium\` (2–3 days), or \`effort/large\` (4+ days).
 

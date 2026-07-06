@@ -38,7 +38,7 @@ export async function triage({ github, context, core }) {
     const categoryRules = [
         { pattern: /^\.github\/workflows\//, label: 'ci' },
         { pattern: /\.(md)$/, label: 'documentation' },
-        { pattern: /^skills\/|^CLAUDE\.md$/, label: 'ai-agent' },
+        { pattern: /^skills\/|^OPENROUTER\.md$/, label: 'ai-agent' },
         { pattern: /\.js$/, label: 'automation' },
     ];
 

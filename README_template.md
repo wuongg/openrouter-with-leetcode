@@ -2,23 +2,23 @@
 
 <img src="./assets/cover.gif" height="350" width="100%" alt="DSA Mentor Banner" />
 
-# Claude with LeetCode
+# OpenRouter with LeetCode
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Stewie--pixel-FFA116?logo=leetcode&logoColor=white)](https://leetcode.com/u/hanchivi39/)
 [![Build](https://github.com/Stewie-pixel/claude-with-leetcode/actions/workflows/build.yml/badge.svg)](https://github.com/Stewie-pixel/claude-with-leetcode/actions/workflows/build-readme.yml)
 [![Problems Solved](https://img.shields.io/badge/dynamic/json?label=Solved&query=length&url=https://raw.githubusercontent.com/Stewie-pixel/claude-with-leetcode/main/.problemSiteData.json&color=brightgreen&logo=leetcode)](https://github.com/Stewie-pixel/claude-with-leetcode)
-[![Claude Solved](https://img.shields.io/badge/dynamic/json?label=Solved&query=length&url=https://raw.githubusercontent.com/Stewie-pixel/claude-with-leetcode/main/.github/badges/solutions.json&color=orange&logo=claude)](https://github.com/Stewie-pixel/claude-with-leetcode)
+[![OpenRouter Solved](https://img.shields.io/badge/dynamic/json?label=Solved&query=length&url=https://raw.githubusercontent.com/Stewie-pixel/claude-with-leetcode/main/.github/badges/solutions.json&color=orange)](https://github.com/Stewie-pixel/claude-with-leetcode)
 [![GitHub Release](https://img.shields.io/github/release/Stewie-pixel/claude-with-leetcode?color=blue&logo=github)](https://github.com/Stewie-pixel/claude-with-leetcode/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Sponsor](https://img.shields.io/badge/Sponsor-FF6699.svg?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Stewie-pixel)
 
 <language-badges />
 
-A little assistant from Claude to help you learn daily LeetCode problems organised by DSA topic and difficulty.
+A little assistant from OpenRouter to help you learn daily LeetCode problems organised by DSA topic and difficulty.
 
 </div>
 
-> This repo hosts solutions to all problems found on [Leetcode](https://leetcode.com/problemset/) with the help of Claude. The site will be updated daily with new solutions under [problem list](https://github.com/Stewie-pixel/claude-with-leetcode#-problem-list)!
+> This repo hosts solutions to all problems found on [Leetcode](https://leetcode.com/problemset/) with the help of OpenRouter. The site will be updated daily with new solutions under [problem list](https://github.com/Stewie-pixel/claude-with-leetcode#-problem-list)!
 
 <br/>
 
@@ -58,7 +58,7 @@ This repository organizes and compiles daily solutions for the entire universe o
 
 ### 🤖 Intelligent AI Mentorship
 
-Get granular, structural breakdown hints and optimal code logic recommendations from Claude without spoiling the core algorithmic logic upfront.
+Get granular, structural breakdown hints and optimal code logic recommendations from OpenRouter without spoiling the core algorithmic logic upfront.
 
 ### 🔄 Multi-Language Synchronization
 

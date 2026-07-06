@@ -4,7 +4,7 @@ description: Behavioral guidelines to reduce common LLM coding mistakes. Use whe
 license: MIT
 ---
 
-# CLAUDE.md — DSA Mentor Configuration
+# OPENROUTER.md — DSA Mentor Configuration
 
 Behavioral guidelines for the DSA Mentor agent in this LeetCode repository.
 

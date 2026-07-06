@@ -257,7 +257,7 @@ Reply ONLY with one word: problem, system, docs, or repo`;
                           .substring(0, 8000)
                     : 'No documentation files found in this PR.';
         } else {
-            const repoFiles = ['README.md', 'CONTRIBUTING.md', 'CLAUDE.md'];
+            const repoFiles = ['README.md', 'CONTRIBUTING.md', 'OPENROUTER.md'];
             const fetchedDocs = [];
             for (const path of repoFiles) {
                 try {
@@ -292,7 +292,7 @@ Reference specific steps, job names, or script sections in your answer.`,
 Analyze clarity, completeness, accuracy, and formatting.
 Reference specific sections or headings in your answer.`,
             repo: `You are answering a question about the claude-with-leetcode repository.
-This is an open-source project that uses Claude AI to automatically generate daily DSA lectures from LeetCode solutions committed by developers.
+This is an open-source project that uses OpenRouter to automatically generate daily DSA lectures from LeetCode solutions committed by developers.
 Use the repository documentation provided to answer. If the answer is not in the docs, direct the user to @Stewie-pixel (maintainer).
 Do not guess or fabricate information about the repo.`,
         };
